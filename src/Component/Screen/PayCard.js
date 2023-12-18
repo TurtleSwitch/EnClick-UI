@@ -1,6 +1,6 @@
 
-export const OnClickPayment = () => {
-    const onClickPayment = () => {
+export const PayCard = () => {
+    const onClickPay = () => {
         if (!window.IMP) return;
         /* 1. 가맹점 식별하기 */
         const { IMP } = window;
@@ -18,6 +18,7 @@ export const OnClickPayment = () => {
             buyer_tel: "02-1670-5176",
             buyer_addr: "성수이로 20길 16",
             buyer_postcode: "04783",
+            m_redirect_url: "https://naver.com"
         };
 
         /* 4. 결제 창 호출하기 */
@@ -29,7 +30,7 @@ export const OnClickPayment = () => {
         const { success, error_msg } = response;
 
         if (success) {
-            console.log(success);
+            console.log(response);
             alert("결제 성공");
         } else {
             alert(`결제 실패: ${error_msg}`);
@@ -37,6 +38,6 @@ export const OnClickPayment = () => {
     }
 
     return (
-        <button onClick={onClickPayment}>결제하기</button>
+        <button onClick={onClickPay}>결제 하기</button>
     );
 }

@@ -1,9 +1,11 @@
-import {OnClickPayment} from "./OnClickPayment";
 import {useEffect} from "react";
+import {PayCard} from "./PayCard";
+import {PayKakao} from "./PayKakao";
+import {PayNaver} from "./PayNaver";
+
 
 export const PayTest = () => {
     useEffect(() => {
-        console.log("render");
         const script = document.createElement("script");
         script.src = "https://cdn.iamport.kr/v1/iamport.js";
         script.async = true;
@@ -11,6 +13,8 @@ export const PayTest = () => {
     }, []);
 
     return <>
-        <OnClickPayment/>
+        <PayCard/>
+        <PayKakao/>
+        <PayNaver/>
     </>
 }
