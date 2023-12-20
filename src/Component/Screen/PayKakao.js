@@ -8,9 +8,9 @@ export const PayKakao = () => {
 
         /* 2. 결제 데이터 정의하기 */
         const data = {
-            pg: "kakaopay", // 반드시 "tosspayments"임을 명시해주세요.
+            pg: "kakaopay", //
             pay_method: "kakaopay",
-            merchant_uid: "order_id_"+"202312181823",
+            merchant_uid: "order_id_"+"202312181824",
             name: "나이키 와플 트레이너 2 SD",
             amount: "100",
             buyer_name: "홍길동",

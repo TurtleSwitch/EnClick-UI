@@ -10,7 +10,7 @@ export const PayCard = () => {
         const data = {
             pg: "tosspayments", // 반드시 "tosspayments"임을 명시해주세요.
             pay_method: "card",
-            merchant_uid: "order_id_149864641614",
+            merchant_uid: "order_id_149864641615",
             name: "나이키 와플 트레이너 2 SD",
             amount: "100",
             buyer_name: "홍길동",

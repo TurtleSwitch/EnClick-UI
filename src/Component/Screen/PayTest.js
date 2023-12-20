@@ -15,6 +15,5 @@ export const PayTest = () => {
     return <>
         <PayCard/>
         <PayKakao/>
-        <PayNaver/>
     </>
 }
